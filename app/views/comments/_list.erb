@@ -1,0 +1,13 @@
+<ul class="comment-list">
+	<% comments.each do |comment| %>
+	<%= erb :"/comments/_show", locals:{comment:comment} %>
+	<% end %> 
+	<% if logged_in? %>
+		<label for="comment">Comment</label>
+		<input type="text" name="comment">
+		<input type="submit" value="Add Comment">
+		<%else %>
+		<p> <a href="/sessions/new">Log in</a> to leave a comment </p>
+		<% end %>
+	</form>
+</ul>

@@ -1,0 +1,12 @@
+
+
+<h3> <%=@user.username%>'s Entries </h3>
+<% @user.entries.each do |entry| %>
+<%= erb :"/entries/_show", locals:{post:entry} %>
+<% end %>
+
+<div class="new_entry">
+<a href="/entries/new">Compose a new entry.
+	</a>
+</div>
+

@@ -1,0 +1,7 @@
+<div class="entry">
+	<h2><a href="/entries/<%=post.id%>"><%= post.title %></a></h2>
+	<article><%= post.content %></article>
+	<span class="date"><%= long_form_date(post.created_at) %></span>
+	<form action="/entries/<%= post.id%>/comments" method="post">
+	<%= erb :"/comments/_list", locals:{comments:post.comments} %>
+</div>

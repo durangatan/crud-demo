@@ -1,0 +1,13 @@
+<% if @errors %>
+<% @errors.each do |error| %>
+<%= erb :"/_error", locals:{error:error}%>
+<% end %>
+<% end %>
+
+<form action="/entries" method="POST">
+<label for="title">Title</label>
+	<input type="text" name="title">
+	<label for="content">Content</label>
+	<textarea name="content"></textarea>
+	<input type="submit" value="Publish">
+</form>
