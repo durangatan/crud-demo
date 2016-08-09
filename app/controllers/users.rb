@@ -13,6 +13,7 @@ post "/users" do
 	@user = User.create(
 		username:params[:username],
 		email: params[:email],
+		password: params[:password]
 		)
 	if @user.id 
 		session[:user_id] = @user.id
