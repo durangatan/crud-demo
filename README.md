@@ -1,18 +1,4 @@
-ENTRIES
--title
--content
-(timestamps)
--author_id
+While I was a student at Dev Bootcamp I gave a tiny demo on CRUD functionality in Sinatra.
 
-COMMENTS
--content
--entry_id
--author_id
-(timestamps)
 
-USERS
--username
--email
--password_hash
-(timestamps)
-
+I made it through the C and the R. 
